@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__heading">Masonry Gallery</h1>
+    </header>
+    <main class="main">
+        <div class="gallery">
+            <img src="img1-min.jpg" alt="">
+            <img src="img8-min.jpg" alt="">
+            <img src="img5-min.jpg" alt="">
+            <img src="img2-min.jpg" alt="">
+            <img src="img7-min.jpg" alt="">
+            <img src="img9-min.jpg" alt="">
+            <img src="img1-min.jpg" alt="">
+            <img src="img8-min.jpg" alt="">
+            <img src="img5-min.jpg" alt="">
+            <img src="img10-min.jpg" alt="">
+            <img src="img2-min.jpg" alt="">
+            <img src="img8-min.jpg" alt="">
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+    <script>
+        const macy = Macy({
+            container: '.gallery',
+            trueOrder: false,
+            waitForImages: false,
+            margin: 40,
+            columns: 3,
+            breakAt: {
+
+                940: 2,
+                520: 1,
+                400: 1
+            }
+        });
+    </script>
+</body>
+
+</html>

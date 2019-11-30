@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Merienda', cursive;
+    /* 10px */
+}
+
+@media (max-width: 728px) {
+    html {
+        font-size: 50%;
+        /* 8px */
+    }
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(67, 67, 67, 0.6), rgba(22, 22, 22, 0.7)), url('img5-min.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__heading {
+    letter-spacing: 10px;
+    font-size: 8rem;
+    color: white;
+    text-shadow: 0px 10px 10px #000;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 500px) {
+    .header__heading {
+        font-size: 6rem;
+
+    }
+}
+
+.main {
+    background-color: #161616;
+    padding: 10rem 0;
+}
+
+.gallery {
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
